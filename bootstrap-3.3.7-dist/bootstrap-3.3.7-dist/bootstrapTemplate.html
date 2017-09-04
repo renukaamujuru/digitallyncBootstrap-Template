@@ -1,0 +1,554 @@
+<html>
+<head>
+	<title> </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style type="text/css">
+	.btn-space {
+		margin-left: 15px;
+	}
+	.orange{
+		color: orange;
+	}
+	.mission{
+		z-index: 2;
+		background-color: rgba(0,0,1,0.1);
+		float: left;
+		margin: 10px;
+	}
+	.mission img{
+		float: right;
+	}
+	.background{
+		background-color: black;
+	}
+	/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+/*.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+*/
+/* Change styles for span and cancel button on extra small screens */
+/*@media screen and (max-width: 300px) {
+    span .psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}*/
+	</style>
+
+</head>
+<body data-target="#my-navbar" data-spy="scroll">
+	
+
+	<!-- navbar -->
+
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+
+
+				</button>
+
+				<a href="#home" class="navbar-brand" class="page-header">Digital Lync Technologies</a>
+			</div><!-- end nav header -->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<a href="#id01" class="btn btn-warning btn-space navbar-btn navbar-right" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+				<a href="" class="btn btn-warning btn-space navbar-btn navbar-right">Register</a>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#home">Home</a>
+					<li><a href="#gallery">Gallery</a>
+					<li><a href="#aboutUs">About Us</a>
+					<li><a href="#contactUs">Contact Us</a>
+					<li><a href="#feedback">feedback</a>
+				</ul>
+			</div><!-- end div collapse-->
+ 
+		</div><!-- end container -->
+	</nav><!--end navbar-->
+
+
+
+
+	<!-- jumbotron part -->
+
+
+
+
+	<div class="jumbotron">
+		<div class="container text-center" class="page-header" id="home">
+			<h1>Digital Lync Academy</h1>
+			<p>Digital Lync is an advanced technology hub, inspired by digital innovations and its empowering attributes around the world!</p>
+			<div class="btn-group">
+				<a href="#home" class="btn btn-lg btn-warning">Download App</a>
+				<a href="#home" class="btn btn-lg btn-default">Visit Academy</a>
+				<a href="#home" class="btn btn-lg btn-warning">Spread the World</a>
+			</div>
+
+		</div><!-- end container -->
+	</div><!-- end jumbotron -->
+
+
+<!-- gallery -->
+
+	<div class="container">
+		<section>
+		<div class="page-header" id="gallery">
+			<h1>Gallery <small>check out for awesome gallery</small></h1>
+			<hr>
+		</div>
+		<div class="carousel slide" id="screenshot-carousel" data-interval="3000" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#screenshot-carousel" data-slide-to="0" class="active">
+					<a href=""></a></li>
+				<li data-target="#screenshot-carousel" data-slide-to="1"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="2"></li>
+				<li data-target="#screenshot-carousel" data-slide-to="3"></li>
+			</ol>
+		
+		<div class="carousel-inner">
+			<div class="item active">
+                 <img src="dlt1.jpg" alt="Digital Lync Technologies" style="width:100%">
+                 <div class="carousel-caption">
+                 	<h3>Digital Lync Technologies Pvt.Ltd</h3>
+                 	<p> Inspired by digital innovations </p>
+                 </div>
+			</div>
+			<div class="item">
+				<img src="dlt2.jpg" alt="Digital Lync Technologies" style="width:100%">
+				<div class="carousel-caption">
+                 	<h3>Digital Lync Technologies Pvt.Ltd</h3>
+                 	<p> Inspired by digital innovations </p>
+                </div>
+			</div>
+			<div class="item">
+				<img src="dlt3.jpg" alt="Digital Lync Technologies" style="width:100%">
+				<div class="carousel-caption">
+                 	<h3>Digital Lync Technologies Pvt.Ltd</h3>
+                 	<p> Inspired by digital innovations </p>
+                </div>
+			</div>
+			<div class="item">
+				<img src="dlt4.jpg" alt="Digital Lync Technologies" style="width:100%">
+				<div class="carousel-caption">
+                 	<h3>Digital Lync Technologies Pvt.Ltd</h3>
+                 	<p> Inspired by digital innovations </p>
+                </div>
+			</div>
+
+
+
+		</div><!-- end carousel inner -->
+		<a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div><!-- end carousel -->
+	</section><!-- end section -->
+</div><!-- end container -->
+
+
+
+  <!-- aboutus -->
+
+  	
+
+
+  	<div class="well">
+  	<div class="container">
+  		<section>
+  			<div class="page-header" id="aboutUs">
+  				<h1>About Us
+  				<small>check out for knowing about us </small></h1>
+  			</div>
+  	<div class="container section-padding">
+        <div class="row">
+            <div class="col-sm-6 icon-box19">
+                <div class="mission">
+                    <h3 class="orange">Mission</h3>
+                    <p class="mission-content">We are determined to provide quality education, Build products that would be a source of utilization in all the sectors of the country. Ensure overall development of companies, employees of students ranging from technical training to personality development.
+                    </p><br>
+                    <img src="ourstrategy.jpg" alt="Mission" class="img-responsive mission-image">
+                </div>
+            </div>
+            <div class="col-sm-6 icon-box19">
+                <div class="mission">
+                    <h3 class="orange">Vision</h3>
+                    <p class="mission-content">Aspiring global developers and Technology geeks are in the verge of questioning themselves – What’s Next? We provide our clients with the best of the resources and high quality products. We render the best of our services and provide a solution for all your business needs.</p>
+                    <img src="vision.jpg" alt="Vision" class="img-responsive mission-image" style="height:18%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section-padding">
+        <div class="row">
+            <div class="col-sm-6 icon-box19">
+                <div class="mission">
+                    <h3 class="orange">Our Strategy</h3>
+                    <p class="mission-content">We analyze your business needs thoroughly and design a digital strategy customized to your digital needs. We design architecture and UI to make your digital presence extraordinary and performance based.
+                    </p><br>
+                    <img src="mission.jpg" alt="Our Strategy" class="img-responsive mission-image" style="width:30%">
+                </div>
+            </div>
+            <div class="col-sm-6 icon-box19">
+                <div class="mission">
+                    <h3 class="orange">Our Approach</h3>
+                    <p class="mission-content">We are great listeners, and understanding your business goals is the first step in transforming your business to generate results. You make a point and we take it. We analyze your business goals and guide you through positioning your brand in the way you envision it.</p>
+                    <img src="approach.jpg" alt="Our Approach" class="img-responsive mission-image" style="width:25%">
+                </div>
+            </div>
+        </div>
+    </div>
+  				<div class="col-lg-6">
+  					<h3></h3>
+  				</div>
+  			</div>
+  		</section><!-- end section -->
+  	</div><!-- end container -->
+  </div><!-- end well -->
+
+
+
+  <!-- contactus -->
+
+
+<div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12" class="page-header" id="contactUs">
+                <h1 class="h1">
+                    Contact us <small>Feel free to contact us</small></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form name="f" #f="ngForm" (ngSubmit)="submit(f)">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" name="name" minlength="3" maxlength="20" ngModel #name="ngModel" placeholder="Enter name" required autofocus>
+                        <!-- <div class="btn btn-danger" *ngIf="name.touched && !name.valid">
+                            <div *ngIf="name.errors.required">name is required</div>       
+                            <div *ngIf="name.errors.minlength">minimum 3 characters</div>
+                            <div *ngIf="name.errors.maxlength">20 maximum characters</div>
+                        </div> -->
+                        
+                        
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="Email" name="email" minlength="10" maxlength="30" ngModel #name="ngModel" placeholder="Enter email" required="required" style="z-index:0">
+                            </div>
+                            <!-- <div class="btn btn-danger" *ngIf="email.touched && !email.valid">
+                            <div *ngIf="email.errors.required">name is required
+                            </div>       
+                            <div *ngIf="email.errors.minlength">minimum 10 characters
+                            </div>
+                            <div *ngIf="email.errors.maxlength">30 maximum characters
+                            </div>
+                        	</div> -->
+                        
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" name="subject" ngModel #name="ngModel" required autofocus>
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                             <!-- <div class="btn btn-danger" *ngIf="subject.touched && !subject.valid">
+                            <div *ngIf="subject.errors.required">name is required</div>       
+                           
+                        </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25"  placeholder="Message" required autofocus></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs" [disabled]="f.invalid">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form>
+            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+            <address>
+                
+                <strong>Digital Lync</strong><br>
+                Khajaguda, Naga Hills Rd,<br>
+                Madhura Nagar Colony,<br>
+                Gachibowli,<br>
+                Hyderabad,<br>
+                Telangana, 500008<br>
+                
+                <abbr title="Phone">
+                    </abbr>
+               <strong>Mobile[IN]:</strong> +91 70938 61616
+            </address>
+            <address>
+                <strong>Email: </strong><br>
+                <a href="mailto:#">info@digital-lync.com</a>
+            </address>
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<hr>
+<hr>
+
+
+
+
+
+
+
+<!-- feedback -->
+
+
+
+
+		<div class="container">
+			<section>
+				<div class="page-header" id="feedback">
+					<h1>feedback <small>checkout for awesome feedback</small></h1>
+					<hr>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<blockquote>
+							<p>Digital Lync Technologies Private Limited is a Private incorporated on 17 May 2016. It is classified as Non-govt company and is registered at Registrar of Companies, Hyderabad. Its authorized share capital is Rs. 500,000 and its paid up capital is Rs. 500,000.</p><br><br><br>
+							<footer>MANIKANTHA KONA</footer>
+						</blockquote>
+
+					</div>
+					<div class="col-lg-4">
+						<blockquote>
+							<p>It is inolved in Software publishing, consultancy and supply [Software publishing includes production, supply and documentation of ready-made (non-customized) software, operating systems software, business & other applications software, computer games software for all platforms.</p><br><br>
+							<footer>MANIKANTHA KONA</footer>
+						</blockquote>
+
+					</div>
+					<div class="col-lg-4">
+						<blockquote>
+							<p>Consultancy includes providing the best solution in the form of custom software after analyzing the user?s needs and problems. Custom software also includes made-to-order software based on orders from specific users. Also, included are writing of software of any kind following directives of the users; software maintenance, web-page design].</p>
+							<footer>MANIKANTHA KONA</footer>
+						</blockquote>
+
+					</div>
+				</div><!-- end row -->
+			</section>
+		</div><!-- end container -->
+	
+
+<!-- subscription part -->
+
+
+
+
+<!-- call to action -->
+<section>
+    <div class="well">
+		<div class="container text-center">
+			<h2>subscribe for more stuff</h2><br><br><br>
+			<form action="" class="form-inline">
+				<div class="form-group">
+					<label for="subscription">subscribe</label>
+					<input type="text" class="form-control" placeholder="Enter Your Name" id="subscription">
+				</div>
+				<div class="form-group">
+					<label>Email address</label>
+				<input type="text" class="form-control" placeholder="Enter Email" id="password">
+				</div>
+				<button type="submit" id="btn btn-default">subscribe</button>
+				<hr>
+			</form>
+
+		</div><!-- end container -->
+	</div><!-- end well -->
+</section><!-- end section -->
+
+<!-- footer -->
+<hr>
+
+<ul class="list-inline text-center">
+	<li><a href="">Linked in</a></li>
+	<li><a href="">Facebook</a></li>
+	<li><a href="">Twitter</a></li>
+</ul>
+<div class="footer background text-center">
+<h3 style="color:white"> ~copyright @ 2017</h3>
+</div>
+
+
+<!-- login -->
+
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+  
+
+
+
+
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js">
+	var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+	</script>
+</body>
+</html>
